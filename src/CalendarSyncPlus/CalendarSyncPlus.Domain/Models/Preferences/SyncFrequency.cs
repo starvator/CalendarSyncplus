@@ -28,5 +28,6 @@ namespace CalendarSyncPlus.Domain.Models.Preferences
             return dateTimeNow;
         }
     }
-       */
+
+        */
 }
