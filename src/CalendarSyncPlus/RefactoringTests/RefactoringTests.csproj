@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Refactoring1\InterfaceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,10 +63,18 @@
       <Project>{58f42963-fc3f-4bf8-88a8-da70f5ae7e58}</Project>
       <Name>CalendarSyncPlus.Common</Name>
     </ProjectReference>
+=======
+    <Compile Include="RefactoringTwo\UnitTest.cs" />
+    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+>>>>>>> origin/test_cases
     <ProjectReference Include="..\CalendarSyncPlus.Domain\CalendarSyncPlus.Domain.csproj">
       <Project>{5af06073-c8b2-4e8d-85e9-c22c44e36a8f}</Project>
       <Name>CalendarSyncPlus.Domain</Name>
     </ProjectReference>
+<<<<<<< HEAD
     <ProjectReference Include="..\CalendarSyncPlus.GoogleServices\CalendarSyncPlus.GoogleServices.csproj">
       <Project>{e95afcf5-28f3-4ced-8901-4bcd0db5fa56}</Project>
       <Name>CalendarSyncPlus.GoogleServices</Name>
@@ -78,6 +87,8 @@
       <Project>{5ff53b1a-81f5-4ff6-8444-4561dd7f6af4}</Project>
       <Name>CalendarSyncPlus.Services</Name>
     </ProjectReference>
+=======
+>>>>>>> origin/test_cases
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
