@@ -13,9 +13,9 @@ using Google.GData.Extensions;
 
 namespace CalendarSyncPlus.GoogleServices.Contacts
 {
-    [Export(typeof(IContactService)), Export(typeof(IGoogleContactService))]
+    [Export(typeof(IContactService))]
     [ExportMetadata("ServiceType", ServiceType.Google)]
-    public class GoogleContactService : IGoogleContactService
+    public class GoogleContactService : IContactService
     {
         public void CreateContactEntry(Contact contact)
         {

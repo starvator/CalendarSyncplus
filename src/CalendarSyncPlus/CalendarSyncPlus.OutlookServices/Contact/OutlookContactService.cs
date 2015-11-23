@@ -4,9 +4,9 @@ using CalendarSyncPlus.Services.Contacts.Interfaces;
 
 namespace CalendarSyncPlus.OutlookServices.Contact
 {
-    [Export(typeof(IContactService)), Export(typeof(IOutlookContactService))]
+    [Export(typeof(IContactService))]
     [ExportMetadata("ServiceType", ServiceType.OutlookDesktop)]
-    public class OutlookContactService : IOutlookContactService
+    public class OutlookContactService : IContactService
     {
     }
 }
