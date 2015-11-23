@@ -7,6 +7,9 @@ namespace CalendarSyncPlus.Domain.Models.Preferences
     [Serializable]
     public class WeeklySyncFrequency : SyncFrequency
     {
+
+        public string Name { get; protected set; }
+
         private int _weekRecurrence;
         private DateTime _timeOfDay;
         private List<DayOfWeek> _daysOfWeek;
@@ -39,7 +42,7 @@ namespace CalendarSyncPlus.Domain.Models.Preferences
             set { SetProperty(ref _daysOfWeek, value); }
         }
 
-        public override bool SyncFrequency.ValidateTimer(DateTime dateTimeNow)
+        public override bool ValidateTimer(DateTime dateTimeNow)
         {
             if (IsDayValid(dateTimeNow))
             {

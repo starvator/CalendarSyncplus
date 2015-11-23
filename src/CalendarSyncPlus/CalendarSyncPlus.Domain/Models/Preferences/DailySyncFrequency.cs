@@ -6,6 +6,9 @@ namespace CalendarSyncPlus.Domain.Models.Preferences
     [Serializable]
     public class DailySyncFrequency : SyncFrequency
     {
+
+        public string Name { get; protected set; }
+
         private bool _customDay;
         private DateTime _startDate;
         private bool _everyWeekday;
@@ -51,7 +54,7 @@ namespace CalendarSyncPlus.Domain.Models.Preferences
             set { SetProperty(ref _timeOfDay, value); }
         }
 
-        public override bool SyncFrequency.ValidateTimer(DateTime dateTimeNow)
+        public override bool ValidateTimer(DateTime dateTimeNow)
         {
             if (IsDayValid(dateTimeNow))
             {
