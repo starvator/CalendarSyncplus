@@ -54,6 +54,12 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CalendarSyncPlus.Domain\CalendarSyncPlus.Domain.csproj">
+      <Project>{5af06073-c8b2-4e8d-85e9-c22c44e36a8f}</Project>
+      <Name>CalendarSyncPlus.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
