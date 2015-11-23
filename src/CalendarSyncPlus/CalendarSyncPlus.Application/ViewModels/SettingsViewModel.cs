@@ -54,10 +54,10 @@ namespace CalendarSyncPlus.Application.ViewModels
         #region Constructors
         [ImportingConstructor]
         public SettingsViewModel(ISettingsView view,
-            IGoogleCalendarService googleCalendarService,
+            ICalendarService googleCalendarService,
             Settings settings,
             ISettingsService settingsService,
-            ISettingsSerializationService serializationService, IOutlookCalendarService outlookCalendarService,
+            ISettingsSerializationService serializationService, ICalendarService outlookCalendarService,
             IMessageService messageService, IExchangeWebCalendarService exchangeWebCalendarService,
             ApplicationLogger applicationLogger, IWindowsStartupService windowsStartupService,
             IAccountAuthenticationService accountAuthenticationService)
@@ -95,10 +95,10 @@ namespace CalendarSyncPlus.Application.ViewModels
 
         #region Properties
 
-        public IGoogleCalendarService GoogleCalendarService { get; set; }
+        public ICalendarService GoogleCalendarService { get; set; }
         public ISettingsService SettingsService { get; set; }
         public ISettingsSerializationService SettingsSerializationService { get; set; }
-        public IOutlookCalendarService OutlookCalendarService { get; set; }
+        public ICalendarService OutlookCalendarService { get; set; }
         public IMessageService MessageService { get; set; }
         public IExchangeWebCalendarService ExchangeWebCalendarService { get; private set; }
         public ILog Logger { get; private set; }

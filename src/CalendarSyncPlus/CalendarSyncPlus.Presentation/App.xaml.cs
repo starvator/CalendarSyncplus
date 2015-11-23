@@ -167,9 +167,9 @@ namespace CalendarSyncPlus.Presentation
             //Add Authentication.Google assembly to catalog
             catalog.Catalogs.Add(new AssemblyCatalog(typeof(IAccountAuthenticationService).Assembly));
             //Add GoogleServices assembly to catalog
-            catalog.Catalogs.Add(new AssemblyCatalog(typeof (IGoogleCalendarService).Assembly));
+            catalog.Catalogs.Add(new AssemblyCatalog(typeof (ICalendarService).Assembly));
             //Add OutlookServices assembly to catalog
-            catalog.Catalogs.Add(new AssemblyCatalog(typeof (IOutlookCalendarService).Assembly));
+            catalog.Catalogs.Add(new AssemblyCatalog(typeof (ICalendarService).Assembly));
             //Add ExchangeWebServices assembly to catalog
             catalog.Catalogs.Add(new AssemblyCatalog(typeof (IExchangeWebCalendarService).Assembly));
             //Add SyncEngine assembly to catalog

@@ -143,9 +143,7 @@
     </Compile>
     <Compile Include="Calendar\GoogleCalendarService.cs" />
     <Compile Include="Contacts\GoogleContactService.cs" />
-    <Compile Include="Contacts\IGoogleContactService.cs" />
     <Compile Include="Tasks\GoogleTaskService.cs" />
-    <Compile Include="Calendar\IGoogleCalendarService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

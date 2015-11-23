@@ -52,8 +52,8 @@ namespace CalendarSyncPlus.Application.ViewModels
 
         [ImportingConstructor]
         public CalendarViewModel(ICalendarView calendarView, 
-            IGoogleCalendarService googleCalendarService,
-            IOutlookCalendarService outlookCalendarService,
+            ICalendarService googleCalendarService,
+            ICalendarService outlookCalendarService,
             IMessageService messageService, 
             IExchangeWebCalendarService exchangeWebCalendarService,
             ApplicationLogger applicationLogger, 
@@ -68,8 +68,8 @@ namespace CalendarSyncPlus.Application.ViewModels
             MessageService = messageService;
         }
 
-        public IGoogleCalendarService GoogleCalendarService { get; set; }
-        public IOutlookCalendarService OutlookCalendarService { get; set; }
+        public ICalendarService GoogleCalendarService { get; set; }
+        public ICalendarService OutlookCalendarService { get; set; }
         public IMessageService MessageService { get; set; }
         public IExchangeWebCalendarService ExchangeWebCalendarService { get; private set; }
         public ILog Logger { get; private set; }

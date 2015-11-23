@@ -47,9 +47,9 @@ namespace CalendarSyncPlus.GoogleServices.Calendar
     /// <summary>
     /// 
     /// </summary>
-    [Export(typeof(ICalendarService)), Export(typeof(IGoogleCalendarService))]
+    [Export(typeof(ICalendarService))]
     [ExportMetadata("ServiceType", ServiceType.Google)]
-    public class GoogleCalendarService : IGoogleCalendarService
+    public class GoogleCalendarService : ICalendarService
     {
         #region Constructors
 

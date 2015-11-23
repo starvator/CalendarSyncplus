@@ -27,9 +27,9 @@ using ThreadingTask = System.Threading.Tasks.Task;
 
 namespace CalendarSyncPlus.OutlookServices.Calendar
 {
-    [Export(typeof (ICalendarService)), Export(typeof (IOutlookCalendarService))]
+    [Export(typeof (ICalendarService))]
     [ExportMetadata("ServiceType", ServiceType.OutlookDesktop)]
-    public class OutlookCalendarService : IOutlookCalendarService
+    public class OutlookCalendarService : ICalendarService
     {
         /// <summary>
         /// 
