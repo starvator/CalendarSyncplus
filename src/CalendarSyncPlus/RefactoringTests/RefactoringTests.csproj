@@ -50,8 +50,34 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Refactoring1\InterfaceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CalendarSyncPlus.Authentication.Google\CalendarSyncPlus.Authentication.Google.csproj">
+      <Project>{cbd1c696-eac6-4092-8e18-42743f1a3d6c}</Project>
+      <Name>CalendarSyncPlus.Authentication.Google</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CalendarSyncPlus.Common\CalendarSyncPlus.Common.csproj">
+      <Project>{58f42963-fc3f-4bf8-88a8-da70f5ae7e58}</Project>
+      <Name>CalendarSyncPlus.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CalendarSyncPlus.Domain\CalendarSyncPlus.Domain.csproj">
+      <Project>{5af06073-c8b2-4e8d-85e9-c22c44e36a8f}</Project>
+      <Name>CalendarSyncPlus.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CalendarSyncPlus.GoogleServices\CalendarSyncPlus.GoogleServices.csproj">
+      <Project>{e95afcf5-28f3-4ced-8901-4bcd0db5fa56}</Project>
+      <Name>CalendarSyncPlus.GoogleServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CalendarSyncPlus.OutlookServices\CalendarSyncPlus.OutlookServices.csproj">
+      <Project>{0348dc28-4b15-4e21-bb4e-9a8bd11f4ec3}</Project>
+      <Name>CalendarSyncPlus.OutlookServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CalendarSyncPlus.Services\CalendarSyncPlus.Services.csproj">
+      <Project>{5ff53b1a-81f5-4ff6-8444-4561dd7f6af4}</Project>
+      <Name>CalendarSyncPlus.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
