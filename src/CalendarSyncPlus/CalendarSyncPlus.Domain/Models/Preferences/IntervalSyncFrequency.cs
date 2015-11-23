@@ -60,7 +60,7 @@ namespace CalendarSyncPlus.Domain.Models.Preferences
             }
         }
 
-        public override bool ValidateTimer(DateTime dateTimeNow)
+        public override bool SyncFrequency.ValidateTimer(DateTime dateTimeNow)
         {
             if (Hours == 0 && Minutes == 0)
             {

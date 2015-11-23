@@ -51,7 +51,7 @@ namespace CalendarSyncPlus.Domain.Models.Preferences
             set { SetProperty(ref _timeOfDay, value); }
         }
 
-        public override bool ValidateTimer(DateTime dateTimeNow)
+        public override bool SyncFrequency.ValidateTimer(DateTime dateTimeNow)
         {
             if (IsDayValid(dateTimeNow))
             {
