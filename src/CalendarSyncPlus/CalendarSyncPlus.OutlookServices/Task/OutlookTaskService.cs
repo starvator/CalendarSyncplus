@@ -20,9 +20,9 @@ using Exception = System.Exception;
 using ThreadingTask = System.Threading.Tasks.Task;
 namespace CalendarSyncPlus.OutlookServices.Task
 {
-    [Export(typeof(ITaskService)), Export(typeof(IOutlookTaskService))]
+    [Export(typeof(ITaskService))]
     [ExportMetadata("ServiceType", ServiceType.OutlookDesktop)]
-    public class OutlookTaskService : IOutlookTaskService
+    public class OutlookTaskService : ITaskService
     {
 
         [ImportingConstructor]

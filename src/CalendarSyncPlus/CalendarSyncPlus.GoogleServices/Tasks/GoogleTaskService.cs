@@ -20,9 +20,9 @@ using Task = Google.Apis.Tasks.v1.Data.Task;
 
 namespace CalendarSyncPlus.GoogleServices.Tasks
 {
-    [Export(typeof(ITaskService)), Export(typeof(IGoogleTaskService))]
+    [Export(typeof(ITaskService))]
     [ExportMetadata("ServiceType", ServiceType.Google)]
-    public class GoogleTaskService : IGoogleTaskService
+    public class GoogleTaskService : ITaskService
     {
         public IAccountAuthenticationService AccountAuthenticationService { get; set; }
         public string TaskServiceName { get { return "Google"; } }

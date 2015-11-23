@@ -23,8 +23,8 @@ namespace CalendarSyncPlus.Application.ViewModels
     public class TaskViewModel : ViewModel<ITaskView>
     {
         public IMessageService MessageService { get; set; }
-        public IOutlookTaskService OutlookTaskService { get; set; }
-        public IGoogleTaskService GoogleTaskService { get; set; }
+        public ITaskService OutlookTaskService { get; set; }
+        public ITaskService GoogleTaskService { get; set; }
         public IExchangeWebTaskService ExchangeWebTaskService { get; set; }
         private DelegateCommand _autoDetectExchangeServer;
         private DelegateCommand _getGoogleCalendarCommand;
@@ -49,8 +49,8 @@ namespace CalendarSyncPlus.Application.ViewModels
 
         [ImportingConstructor]
         public TaskViewModel(ITaskView view, ApplicationLogger applicationLogger, 
-            IMessageService  messageService, IOutlookTaskService outlookTaskService,
-            IGoogleTaskService googleTaskService, IExchangeWebTaskService exchangeWebTaskService) : base(view)
+            IMessageService  messageService, TaskService outlookTaskService,
+            ITaskService googleTaskService, IExchangeWebTaskService exchangeWebTaskService) : base(view)
         {
             MessageService = messageService;
             OutlookTaskService = outlookTaskService;
