@@ -65,7 +65,6 @@
     <Compile Include="..\Shared\AssemblyInfo.cs">
       <Link>AssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="Calendar\IOutlookCalendarService.cs" />
     <Compile Include="Calendar\OutlookCalendarService.cs" />
     <Compile Include="Contact\OutlookContactService.cs" />
     <Compile Include="Task\OutlookTaskService.cs" />
