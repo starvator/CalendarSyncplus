@@ -5,7 +5,7 @@ using CalendarSyncPlus.Domain.Helpers;
 namespace CalendarSyncPlus.Domain.Models.Preferences
 {
     [Serializable]
-    public class WeeklySyncFrequency : SyncFrequency
+    public class WeeklySyncFrequencyTwoTwo : SyncFrequencyTwoTwo
     {
 
         public string Name { get; protected set; }
@@ -14,7 +14,7 @@ namespace CalendarSyncPlus.Domain.Models.Preferences
         private DateTime _timeOfDay;
         private List<DayOfWeek> _daysOfWeek;
 
-        public WeeklySyncFrequency()
+        public WeeklySyncFrequencyTwoTwo()
         {
             Name = "Weekly";
             DaysOfWeek = new List<DayOfWeek>() {DateTime.Today.DayOfWeek};

@@ -3,7 +3,7 @@
 namespace CalendarSyncPlus.Domain.Models.Preferences
 {
     [Serializable]
-    public class IntervalSyncFrequency : SyncFrequency
+    public class IntervalSyncFrequencyTwo : SyncFrequencyTwo
     {
         public string Name { get; protected set; }
 
@@ -11,7 +11,7 @@ namespace CalendarSyncPlus.Domain.Models.Preferences
         private int _hours;
         private int _minutes;
 
-        public IntervalSyncFrequency()
+        public IntervalSyncFrequencyTwo()
         {
             Name = "Interval";
             Hours = 1;

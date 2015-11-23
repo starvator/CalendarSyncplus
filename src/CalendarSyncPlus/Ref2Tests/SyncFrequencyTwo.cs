@@ -6,7 +6,7 @@ namespace CalendarSyncPlus.Domain.Models.Preferences
 {
     [Serializable]
 
-    interface SyncFrequency
+    interface SyncFrequencyTwo
     {
         public virtual bool ValidateTimer(DateTime dateTimeNow);
         public virtual DateTime GetNextSyncTime(DateTime dateTimeNow);
@@ -14,7 +14,7 @@ namespace CalendarSyncPlus.Domain.Models.Preferences
     }
 
     /*
-    public class SyncFrequency : ValidatableModel
+    public class SyncFrequencyTwo : ValidatableModel
     {
         public string Name { get; protected set; }
 

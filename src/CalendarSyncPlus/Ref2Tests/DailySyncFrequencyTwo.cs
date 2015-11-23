@@ -4,7 +4,7 @@ using CalendarSyncPlus.Domain.Helpers;
 namespace CalendarSyncPlus.Domain.Models.Preferences
 {
     [Serializable]
-    public class DailySyncFrequency : SyncFrequency
+    public class DailySyncFrequencyTwo : SyncFrequencyTwo
     {
 
         public string Name { get; protected set; }
@@ -15,7 +15,7 @@ namespace CalendarSyncPlus.Domain.Models.Preferences
         private int _dayGap;
         private DateTime _timeOfDay;
 
-        public DailySyncFrequency()
+        public DailySyncFrequencyTwo()
         {
             Name = "Daily";
             DayGap = 1;
